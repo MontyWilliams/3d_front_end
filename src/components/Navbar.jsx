@@ -38,12 +38,15 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle(!toggle)}
-          />
+         <img
+          src={toggle ? menu : close }
+          alt="menu"
+          className="w-[28px] h-[28px] object-contain cursor-pointer"
+          onClick={() => {setToggle(!toggle)}}
+        />
+        <div className={`${!toggle ? 'hidden' : 'flex'}`}>
+          yea
+        </div>
         </div>
 
       </div>
