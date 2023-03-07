@@ -1,4 +1,6 @@
-import React from 'react'
+import { Suspense, useEffect, useState } from 'react'
+import { canvas } from '@react-three/fiber';
+import { orbitControls, Preload, useGLTF } from '@react-three/drei';
 
 const Computers = () => {
   return (
