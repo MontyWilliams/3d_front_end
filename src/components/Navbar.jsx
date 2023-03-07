@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import { styles } from '../../style'
+import { styles } from '../style'
 import { navLinks } from '../constants'
 import { dm_color, menu, close } from '../assets'
 
