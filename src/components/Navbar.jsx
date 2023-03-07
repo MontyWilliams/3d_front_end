@@ -1,8 +1,8 @@
-import React, {useStat, useEffect} from 'react'
-import { LInk } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import { styles } from '../../style'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { dm_color, menu, close } from '../assets'
 
 const Navbar = () => {
   const [ active, setActive ] = useState('');
@@ -14,9 +14,11 @@ const Navbar = () => {
         className="flex items-center gap-2"
         onClick={() => {
           setActive("")
+          window.scrollTo(0, 0)
         }}
         >
-
+          <img src={dm_color} alt="dm-color" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer">Monty <span className="sm:block hidden">| Williams </span> </p>
         </Link>
       </div>
     </nav>
