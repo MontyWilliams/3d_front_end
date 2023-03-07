@@ -2,7 +2,7 @@ const App = () => {
  
   return (
     <div>
-      3D Developer Portfolio
+      3D Developer Portfolio Site
     </div>
   )
 }
