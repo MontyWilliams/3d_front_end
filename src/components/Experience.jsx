@@ -7,10 +7,16 @@ import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
 
 
+
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <>
+      <motion.div variants={textVariant()}>
+      <p className={styles.sectionSubText}>Check out what Ive done so far</p>
+        <h2 className={styles.sectionHeadText}>work experience</h2>
+      </motion.div>
+    </>
   )
 }
 
-export default Experience
+export default SectionWrapper(Experience, 'experience')
