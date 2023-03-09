@@ -1,9 +1,11 @@
-import React from 'react'
+import { BallCanvas } from './canvas'
+import { SectionWrapper } from '../hoc'
+import { technologies } from '../constants'
 
 const Tech = () => {
   return (
-    <div>Tech</div>
+    <div></div>
   )
 }
 
-export default Tech
+export default SectionWrapper(Tech, "")
