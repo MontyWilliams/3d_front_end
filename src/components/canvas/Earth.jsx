@@ -9,7 +9,11 @@ const Earth = () => {
   return (
     <primitive
       object={earth.scene}
-    />
+      scale={2.5}
+      position-y={0}
+      position-x={0}
+      rotation-y={0}
+      />
   )
 }
 
@@ -19,7 +23,12 @@ const EarthCanvas = () => {
       shadows
       frameloop='demand'
       gl={{ preserverDrawingBuffer: true }}
-      camera={{}}
+      camera={{
+        fov: 45,
+        near: 0.1,
+        far: 200,
+        position: [-4, 3, 6]
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
