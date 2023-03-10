@@ -24,7 +24,7 @@ const FeedBackCard = ({ index, testimonial, name, designation, company, image}) 
         <img
           src={image}
           alt={`feedback-by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"  
+          className="w-10 h-10 rounded-full object"  
         />
       </div>
     </div>
