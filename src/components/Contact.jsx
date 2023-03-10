@@ -45,6 +45,30 @@ const Contact = () => {
                 text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Email</span>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="What's your email?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+                text-white rounded-lg outlined-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
+            <textarea
+              rows="7"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Type your message here"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+                text-white rounded-lg outlined-none border-none font-medium"
+            />
+          </label>
         </form>
       </motion.div>
     </div>
