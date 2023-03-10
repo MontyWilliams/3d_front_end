@@ -54,7 +54,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary 
-                text-white rounded-lg outlined-none border-none font-medium"
+                         text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -66,9 +66,16 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Type your message here"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary 
-                text-white rounded-lg outlined-none border-none font-medium"
+                         text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
+          <button
+            type="Submit"
+            className="bg-teritiary py-3 px-8 outline-none w-fit text-white
+                       font-bold shadow-md shadow-primary rounded-xl"
+          >
+            {loading ? 'Sending...' : 'Send'}
+          </button>
         </form>
       </motion.div>
     </div>
