@@ -5,6 +5,11 @@ import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
 import { testimonials } from '../constants'
 
+const FeedBackCard = ({ index, testimonial, name, designation, company, image}) => (
+  <motion.div>
+    <p>{testimonial}</p>
+  </motion.div>
+)
 const Feedbacks = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
@@ -13,6 +18,15 @@ const Feedbacks = () => {
           <p className={`${styles.sectionSubText}`}>What others say</p>
           <h2 className={`${styles.sectionHeadText}`}>Testimonials.</h2>
         </motion.div>
+      </div>
+      <div className={`${styles.paddingX} mt-20 pb-14 flex flex-wrap gap-7`}>
+        {testimonials.map((testimonial, index) => (
+          <FeedBackCard
+            key={testimonial.name}
+            index={index}
+            {...testimonial}
+          />
+        ))}
       </div>
     </div>   
   )
