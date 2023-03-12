@@ -41,6 +41,20 @@ const Contact = () => {
       },
       'LT0ltYXEdP42dlmkO'
     )
+    .then(() => {
+      setLoading(false);
+      alert('Thanks you for reaching out, I\'ll get back with you soon!')
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false);
+      console.log(error)
+      alert('Sorry Something went wrong')
+    }
+    )
   }
   
   return (
