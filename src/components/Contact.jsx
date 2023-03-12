@@ -29,7 +29,18 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send()
+    emailjs.send(
+      'template_tsp123f',
+      'service_ya8z38h',
+      {
+        from_name: form.name,
+        to_name: 'Monty',
+        from_email: form.email,
+        to_email: 'montywilliams@918dcx.com',
+        message: form.message,
+      },
+      'LT0ltYXEdP42dlmkO'
+    )
   }
   
   return (
