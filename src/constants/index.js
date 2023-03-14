@@ -1,4 +1,7 @@
 import {
+    memeGenerator,
+    chatImg,
+    reactJournal,
     mobile,
     backend,
     creator,
@@ -80,10 +83,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -108,10 +111,10 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
@@ -198,28 +201,29 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Travel Journal",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A fictional travel journal from the highest mountains in the east to the drudging slums of the America\'s wsxt coast which sadly ended in incarceration... Not the best application but it was the first React app I built completely from scratch. At one point this was my proudest work!",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "html",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: reactJournal,
+      demo: "https://dapper-bunny-6101ca.netlify.app/",
+      source_code_link: "https://github.com/MontyWilliams/travel_journal",
     },
     {
-      name: "Job IT",
+      name: "Meme Generator",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -228,7 +232,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "html",
           color: "green-text-gradient",
         },
         {
@@ -236,29 +240,31 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: memeGenerator,
+      source_code_link: "https://github.com/MontyWilliams/meme_generator",
+      demo: "https://master--vocal-choux-76ae84.netlify.app/",
     },
     {
-      name: "Trip Guide",
+      name: "chat ai",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A simple chat application that allows you to speak to the popular an artificial intelligence using API endpoints provided by chatGPT. Using nodeJs as the development envirnoment I have the front and the backend deployed on 2 differnt servers.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "nodeJs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: chatImg,
+      demo: "https://dashing-moxie-09704e.netlify.app/",
+      code: "https://github.com/MontyWilliams/Js_ai_chatGP"
     },
   ];
   
